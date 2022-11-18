@@ -1,0 +1,15 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Погода на 7 дней</h2>
+<form action="" method="post" name="city">
+      <div class="mb-3">
+        <label class="form-label">Введите название города</label>
+          {{form.city_name()}}
+        <div id="Help" class="form-text">Название нужно вводить на русском языке</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Получить файл</button>
+    </form>
+{% endblock %}

@@ -12,7 +12,6 @@ def parse_arg():
 
 if __name__ == "__main__":
     city = parse_arg()
-    # city = input()
     try:
         weather = parsing_weather(city)
     except:
